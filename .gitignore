@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Env & secrets
+.env
+.env.local
+
+# Project data & outputs
+data/toolbench/*
+!data/toolbench/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+outputs/*
+!outputs/.gitkeep
+.llm_cache/
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+
+# Tests
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,25 @@
+{
+  "description": "Static example of diversity-experiment style metrics (not from a live run). See DESIGN §12 and examples/diversity_results.md for real tables.",
+  "seed": 42,
+  "n_per_arm": 100,
+  "run_a_no_steering": {
+    "n": 100,
+    "unique_tool_coverage": 0.464,
+    "tool_pair_entropy_bits": 7.981,
+    "category_gini": 0.355,
+    "multi_step_ratio": 0.81,
+    "multi_tool_ratio": 0.79,
+    "clarification_rate": 0.39,
+    "mean_judge": 3.44
+  },
+  "run_b_steering": {
+    "n": 100,
+    "unique_tool_coverage": 0.489,
+    "tool_pair_entropy_bits": 8.099,
+    "category_gini": 0.34,
+    "multi_step_ratio": 0.86,
+    "multi_tool_ratio": 0.8,
+    "clarification_rate": 0.39,
+    "mean_judge": 3.44
+  }
+}

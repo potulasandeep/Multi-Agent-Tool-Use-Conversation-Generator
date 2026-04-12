@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convgen"
+version = "0.1.0"
+description = "Offline synthetic multi-turn tool-use conversation generator"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.6",
+    "networkx>=3.2",
+    "typer>=0.12",
+    "rich>=13.7",
+    "python-dotenv>=1.0",
+    "faker>=24.0",
+    "openai>=1.30",
+    "anthropic>=0.34",
+    "tenacity>=8.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+convgen = "convgen.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "e2e: expensive end-to-end test that hits real LLM APIs",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

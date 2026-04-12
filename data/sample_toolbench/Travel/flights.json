@@ -1,0 +1,21 @@
+{
+  "tool_name": "flights",
+  "tool_description": "Flight search and booking (minimal fixture).",
+  "api_list": [
+    {
+      "name": "search",
+      "description": "Search flights",
+      "required_parameters": [
+        {"name": "from_city", "type": "string"},
+        {"name": "to_city", "type": "string"}
+      ],
+      "optional_parameters": []
+    },
+    {
+      "name": "book",
+      "description": "Book a flight",
+      "required_parameters": [{"name": "flight_id", "type": "string"}],
+      "optional_parameters": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tool_name": "hotels",
+  "tool_description": "Hotel search and booking (shipped minimal fixture for reviewers).",
+  "api_list": [
+    {
+      "name": "search",
+      "description": "Search hotels in a city",
+      "required_parameters": [{"name": "city", "type": "string"}],
+      "optional_parameters": [{"name": "max_price", "type": "integer"}]
+    },
+    {
+      "name": "get_details",
+      "description": "Get hotel details",
+      "required_parameters": [{"name": "hotel_id", "type": "string"}],
+      "optional_parameters": []
+    },
+    {
+      "name": "book",
+      "description": "Book a hotel",
+      "required_parameters": [
+        {"name": "hotel_id", "type": "string"},
+        {"name": "check_in", "type": "string"}
+      ],
+      "optional_parameters": []
+    }
+  ]
+}

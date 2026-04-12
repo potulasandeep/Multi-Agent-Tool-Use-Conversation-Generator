@@ -1,0 +1,15 @@
+{
+  "tool_name": "weather",
+  "tool_description": "Weather forecast (minimal fixture).",
+  "api_list": [
+    {
+      "name": "forecast",
+      "description": "Get weather forecast",
+      "required_parameters": [
+        {"name": "city", "type": "string"},
+        {"name": "date", "type": "string"}
+      ],
+      "optional_parameters": []
+    }
+  ]
+}
